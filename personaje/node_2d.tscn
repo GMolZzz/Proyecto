@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://csk3wq4mjojte"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_feogk"]
+load_path = "res://.godot/imported/character_roundRed.png-4e85cdcfdc0202bb4e0a0dc2a845abf5.ctex"
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rk66w"]
+radius = 52.0
+height = 214.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Jugador" type="CharacterBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Jugador"]
+scale = Vector2(2.9375, 3.67188)
+texture = SubResource("CompressedTexture2D_feogk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Jugador"]
+shape = SubResource("CapsuleShape2D_rk66w")

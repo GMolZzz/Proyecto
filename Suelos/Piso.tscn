@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2rtqtov4nhu5"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8rjqp"]
+load_path = "res://.godot/imported/piso.png-a82905f4b4b530e6ec52fb8cafd1f9eb.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8icdp"]
+size = Vector2(4418, 57)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Piso" type="Sprite2D" parent="."]
+position = Vector2(53, 22)
+texture = SubResource("CompressedTexture2D_8rjqp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(108, -196.5)
+shape = SubResource("RectangleShape2D_8icdp")

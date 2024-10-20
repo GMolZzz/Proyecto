@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=3 uid="uid://bugbw5vj7lss5"]
+
+[ext_resource type="PackedScene" uid="uid://b2rtqtov4nhu5" path="res://Suelos/Piso.tscn" id="1_pd468"]
+[ext_resource type="PackedScene" uid="uid://bwc6g7v4pwjw6" path="res://Suelos/Piso2.tscn" id="2_hdeod"]
+[ext_resource type="PackedScene" uid="uid://csk3wq4mjojte" path="res://personaje/node_2d.tscn" id="3_fdlo1"]
+[ext_resource type="PackedScene" uid="uid://0h23dtoqwqm5" path="res://Enemigos/Barril.tscn" id="5_5b414"]
+[ext_resource type="PackedScene" uid="uid://bi5862032arow" path="res://Suelos/Piso3.tscn" id="5_fbkjq"]
+
+[node name="nivel1" type="Node2D"]
+position = Vector2(60, 231)
+scale = Vector2(0.0942665, 0.0795168)
+
+[node name="RigidBody2D" parent="." instance=ExtResource("5_5b414")]
+position = Vector2(4678.23, -1219.87)
+scale = Vector2(1, 1)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("1_pd468")]
+position = Vector2(4285.72, 4011.73)
+rotation = 0.0867415
+scale = Vector2(2.04296, 1.16069)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("2_hdeod")]
+position = Vector2(4582.75, 2225.95)
+rotation = -0.125747
+scale = Vector2(1.6, 1)
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("2_hdeod")]
+position = Vector2(3617.4, 880.317)
+rotation = 0.0949474
+scale = Vector2(1.6, 1)
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("2_hdeod")]
+position = Vector2(4814, -619)
+rotation = -0.176247
+scale = Vector2(1.44, 1)
+
+[node name="Node2D" parent="." instance=ExtResource("3_fdlo1")]
+position = Vector2(731.967, 3169.14)
+scale = Vector2(1.5, 1.5)
+
+[node name="StaticBody2D5" parent="." instance=ExtResource("5_fbkjq")]
+position = Vector2(3321, -1566)
+scale = Vector2(1.68077, 1.60664)
+
+[node name="StaticBody2D6" parent="." instance=ExtResource("5_fbkjq")]
+position = Vector2(6257, -1569)
+scale = Vector2(1.681, 1.607)
+
+[node name="StaticBody2D7" parent="." instance=ExtResource("5_fbkjq")]
+position = Vector2(9179, -1562)
+scale = Vector2(1.681, 1.607)

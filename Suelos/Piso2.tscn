@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwc6g7v4pwjw6"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hywsr"]
+load_path = "res://.godot/imported/ladder.png-dacd66dec8af2479748e10923f2e22b8.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vlwby"]
+size = Vector2(4531, 68)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Piso2" type="Sprite2D" parent="."]
+texture = SubResource("CompressedTexture2D_hywsr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-10.5, -40)
+shape = SubResource("RectangleShape2D_vlwby")
